@@ -98,3 +98,17 @@ SELECT * FROM Albuns WHERE IdEstilo = 4;
 SELECT Nome, IdArtista, DataLancamento FROM Albuns--Info que será mostrada
 ORDER BY DataLancamento ASC;
 
+-- INNER JOIN (JUNÇÃO)
+
+SELECT * FROM Artistas
+INNER JOIN Albuns ON Artistas.IdArtista = Albuns.IdArtista
+WHERE Albuns.IdArtista = 3;
+GO
+
+SELECT IdArtista, IdEstilo FROM Albuns WHERE IdEstilo
+
+--INNER JOIN COM 3 TABELAS
+SELECT Albuns.Nome, Albuns.DataLancamento, Albuns.Vizualizacao, Artistas.NomeArtista, Estilos.Nome FROM Albuns
+INNER JOIN Artistas ON Albuns.IdArtista = Artistas.IdArtista
+INNER JOIN Estilos ON Albuns.IdEstilo = Estilos.IdEstilo
+WHERE Estilos.IdEstilo = 5

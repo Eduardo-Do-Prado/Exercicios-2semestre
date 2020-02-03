@@ -1,5 +1,0 @@
-5 dados em cada tabelaa
-alterar nome de um artista
-alterar tipo de usuario
-alterara quant. vizual. album
-apagar um albúm
