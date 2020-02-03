@@ -25,10 +25,6 @@ CREATE TABLE Livros(
 	IdGenero INT FOREIGN KEY REFERENCES Generos (IdGenero),
 	IdAutor INT FOREIGN KEY REFERENCES Autores (IdAutor),
 );
-	--DQL COMANDO DE CONSULTA
-SELECT * FROM Autores;
-SELECT * FROM Generos;
-SELECT * FROM Livros;
 
 INSERT INTO Autores (NomeAutor)
 VALUES ('Mauricio de Souza'),
@@ -80,4 +76,16 @@ WHERE IdLivro = 5;
 
 DELETE FROM Autores
 WHERE IdAutor = 5;
+
+SELECT * FROM Autores;
+
+SELECT * FROM Generos;
+
+SELECT * FROM Livros;
+
+SELECT Titulo,IdAutor FROM Livros;
+
+SELECT Titulo,IdGenero FROM Livros;
+
+SELECT Titulo,IdAutor,IdGenero FROM Livros;
 
